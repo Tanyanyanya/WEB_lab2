@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="positions.css">
+    <title>Луговець Тетяна ІТ-02</title>
+
+    <style>
+        body{
+            font-size: 20px;
+        }
+        table {background: black;}
+        td{background: white;}
+        #sth, #lastname, #name, #patronymic{
+            width: 25%;
+        }
+        .first  td{
+            background-color: #258f8f;
+            color: white;
+        }
+        .first td:hover{
+            transition: 1s;
+            background-color: #f5f525;
+            color: black;
+        }
+        .second td{
+            background-color: #f5f525;
+        }
+        .second td:hover{
+            transition: 1s;
+            background-color: #258f8f;
+            color: white;
+        }
+        .sec td{
+            background-color: #f5f525;
+        }
+        .sec td:hover{
+            transition: 1s;
+            background-color: #258f8f;
+            color: white;
+        }
+        .third td{
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+
+
+
+    <table width="80%">
+        <tr class="first">
+            <td id="lastname" height=50 width=20%>Луговець</td>
+            <td colspan="2" height=50 id="name" width=20%>Тетяна</td>
+            <td id="patronymic" height=50 width=60%>Ігорівна</td>
+        </tr>
+        <tr class="second">
+            <td rowspan="2"height=50 width=20%>ІТ-02</td>
+            <td rowspan="2"height=50>ЛР №2</td>
+            <td height=25 width=10%></td>
+            <td rowspan="2"height=50 width=60%>25 варіант</td>
+        </tr>
+        <tr class="sec">
+            <td height=25 width=10%></td>
+        </tr>
+        <tr class="third">
+            <td height=50 width=20%></td>
+            <td colspan="2" height=50 width=20%></td>
+            <td height=50 width=60%></td>
+        </tr>
+    </table>
+
+<h2>With "relative":</h2>
+<h></h>
+   <div id="first" class="circle"></div>
+    <div id="second" class="circle"></div>
+    <div id="third" class="circle"></div>
+
+
+<h2>With "translate":</h2>
+    <svg height = "360px"  width = "360px">
+        <rect x="0" y="0" 
+           width="360" height="360" 
+           fill="none" 
+           stroke-width="5px" stroke-opacity="0.3"/>
+        <g fill-opacity="0.6" stroke="black" stroke-width="0.2px">
+         <circle cx="180" cy="180" r="90" 
+             fill="red"   transform="translate(0,-45)"/>
+         <circle cx="180" cy="180" r="90" 
+             fill="green"  transform="translate(50,45)"/>
+         <circle cx="180" cy="180" r="90" 
+             fill="blue" transform="translate(-50,45)"/>
+        </g>
+     </svg>
+
+
+</body>
+</html>

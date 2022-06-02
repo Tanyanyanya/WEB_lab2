@@ -1,0 +1,62 @@
+.circle{
+    position:absolute;
+    width:150px;
+    height: 150px;
+    
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    filter: alpha(opacity=30);
+    -moz-opacity: 0.3;
+    -khtml-opacity: 0.3;
+    opacity:0.3;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+
+#second{
+    position:relative; 
+    left:92px; 
+    top:69px;
+    background: green;
+}
+
+#first {
+    background: blue;
+    top:326px;
+}
+
+#third {
+    position: relative; 
+    top: -180px;
+    left: 40px;
+    background: red;
+}
+
+#problem{
+    font-size: 8pt;
+    color:white;
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    border-left:2px solid red;
+    border-top:2px solid red;
+    top : 41px;
+    left:71px;
+    z-index:-4;
+    background:red;
+}
+#problem:after{
+    position:absolute;
+    content:" ";
+    background:white;
+    width:150px;
+    height:150px;
+    top:-2px;
+    left: -2px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    z-index:-3;
+}
